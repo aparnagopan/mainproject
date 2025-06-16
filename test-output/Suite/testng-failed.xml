@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Test(failed)">
+    <classes>
+      <class name="RescueWayProject.pagesRescueway">
+        <methods>
+          <include name="BrowserQuit"/>
+          <include name="reportDisaster"/>
+          <include name="websiteLogin"/>
+          <include name="createAlert"/>
+        </methods>
+      </class> <!-- RescueWayProject.pagesRescueway -->
+      <class name="RescueWayProject.LoginRescueway">
+        <methods>
+          <include name="BrowserQuit"/>
+          <include name="BrowserLaunch"/>
+          <include name="validUsernameAndCaseDifferentPasswordLogin"/>
+          <include name="caseDifferentUsernameAndvalidPasswordLogin"/>
+          <include name="invalidUsernameAndValidPasswordLogin"/>
+          <include name="emptyUsernameAndPasswordLogin"/>
+          <include name="validUsernameAndValidPasswordLogin"/>
+          <include name="validUsernameAndInvalidPasswordLogin"/>
+          <include name="invalidUsernameAndInvalidPasswordLogin"/>
+          <include name="loginPage"/>
+        </methods>
+      </class> <!-- RescueWayProject.LoginRescueway -->
+      <class name="RescueWayProject.signUpRescueway">
+        <methods>
+          <include name="signupFromLoginpage"/>
+          <include name="signupWithEmptyFields"/>
+          <include name="signupWithMismatchPasswords"/>
+          <include name="BrowserQuit"/>
+          <include name="BrowserLaunch"/>
+          <include name="signupFromHomepage"/>
+        </methods>
+      </class> <!-- RescueWayProject.signUpRescueway -->
+      <class name="RescueWayProject.contactUsRescueway">
+        <methods>
+          <include name="BrowserQuit"/>
+          <include name="loginPage"/>
+          <include name="browserLaunch"/>
+          <include name="contactRescueway"/>
+        </methods>
+      </class> <!-- RescueWayProject.contactUsRescueway -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
