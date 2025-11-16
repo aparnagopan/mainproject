@@ -47,7 +47,7 @@ public class LoginRescueway {
 		driver.findElement(By.id("loginPassword")).sendKeys("admin123");
 		
 		JavascriptExecutor js = (JavascriptExecutor) driver;
-		js.executeScript("window.scrollBy(0,300)");
+		
 		
 		WebElement button= driver.findElement(By.xpath("//button[@class='btn btn-secondary w-100']"));
 		button.click();
